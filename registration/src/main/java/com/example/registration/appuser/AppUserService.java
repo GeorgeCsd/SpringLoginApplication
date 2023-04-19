@@ -39,4 +39,7 @@ public class AppUserService implements UserDetailsService { //how we find users 
         //TODO:Send email
         return token;
     }
+    public int enableAppUser(String email){
+        return appUserRepository.enableAppUser(email); //enable one user by changing enable to true and set his email
+    }
 }
